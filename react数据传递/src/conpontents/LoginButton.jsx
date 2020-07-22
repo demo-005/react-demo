@@ -7,15 +7,10 @@ class LoginButton extends Component {
     }
     render() {
         return (
-
-
-            
-            <button onClick={() => { this.props.item("taowuhua01") }}>LoginButton</button>
-            <button onClick={ this.props.item("taowuhua01") }>LoginButton</button>
-       
-       
-       
-            );
+            <button onClick={() => { this.props.item("taowuhua02") }}>
+                LoginButton
+            </button>
+        );
     }
 }
 
