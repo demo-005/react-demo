@@ -5,7 +5,7 @@ class Register extends Component {
         console.log(params.id)
         return (
             <div>
-                Register 
+                i'm register activity 
             </div>
         );
     }

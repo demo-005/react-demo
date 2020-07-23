@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom"
+import { Button } from 'antd';
+import 'antd/dist/antd.css';
 class Main extends Component {
-    constructor(props) {
-        super(props)
-        this.handleClick = this.handleClick.bind(this)
-    }
-    handleClick (){
+    handleClick =()=>{
         console.log("====")
         this.props.history.push('/login')
     }
     render() {
         return (
             <div>
-                <div onClick={this.handleClick}>Main</div> 
+                <Button onClick={() => this.handleClick()}>history方式跳转login界面</Button> 
+                <div>
+                    <Link to="/register/:id">Link方式跳转register</Link>
+                </div>
             </div>
         );
     }
